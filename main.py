@@ -3,18 +3,17 @@ import random
 os.system('cls||clear')
 
 
-secret_food = ["sushi", "noodle", "salad", "steak", "pasta", "chicken", "nuggets", "pancake"]
-#play_again = True
+secret_food = ["sushi", "noodle", "salad", "steak", "pasta", "chicken", "fries", "nuggets", "pancake", "cookie"]
 
 
 while True: 
-    # chon mon an ngau nhien
+    # random food
     food = random.choice(secret_food) 
 
     print("Welcome to the Food Guessing Game!\n")
     print("Try to guess the food that I'm thinking of...")
     print("Here is the foods you can guess:", secret_food)
-# 
+# use attempt to 
     max_attempts = 3
     attempt = 0
     # check if user has used hint
@@ -28,7 +27,7 @@ while True:
             break
         else: 
             print(" Wrong, Try again!!!")
-        # if 
+        # if not use hint to ask if they want hint or not.
             if not use_hint:
                 hint = input(" Do you want to use hint? (yes or no):")
                 if hint == "yes":
