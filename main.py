@@ -12,7 +12,7 @@ while True:
 
     print("Welcome to the Food Guessing Game!\n")
     print("Try to guess the food that I'm thinking of...")
-    print("Here is the foods you can guess:", secret_food)
+    print("Here is the foods you can guess:",secret_food)
 # use attempt to attempt the number of tries
     max_attempts = 3
     attempt = 0
@@ -20,7 +20,7 @@ while True:
     use_hint = False 
 
     while attempt < max_attempts:
-        guess = input("Enter your guess: ").lower().strip()
+        guess = input("Enter your guess:").lower().strip()
         attempt +=1
         if guess == food:
             print(" Congratulations, You guessed right", attempt, "tries")
@@ -37,7 +37,7 @@ while True:
     if guess != food: 
         print(" Sorry, The food was",food)   
 #to ask user want to play again or not
-    play_again = input("Do you want to play again? (yes/no): ").lower().strip()
+    play_again = input("Do you want to play again? (yes/no):").lower().strip()
     if play_again != "yes":
         print("Thank you for playing Guess the Food!")
         break
